@@ -9,12 +9,14 @@
  * @return string $cadena Devolveremos una cadena con un añadido
  * @access private
  */
-function mostrarCAdena($cadena)
+function mostrarCadena($cadena)
 {
 
   echo "Hola";
   $cadena = "Hola ".($cadena);
-  return $cadena;
+  //Nueva linea de código.
+  $bienvenido = "Bienvenido al curso de DAW 2021 ".$cadena;
+  return $bienvenido;
 }
 
 /**
@@ -38,6 +40,6 @@ function calcularPuntos($edad)
  * @access public
 */
 echo "Tus puntos son :".calcularPuntos(54);
-echo "La cadena queda :".mostrarCAdena("amigo");
+echo "La cadena queda :".mostrarCadena("Antonio Jesús");
 
 ?>
